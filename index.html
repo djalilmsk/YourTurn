@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YourTurn</title>
+  <!-- main css file -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- fontAwesome link -->
+  <script src="https://kit.fontawesome.com/5da28a4df3.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- Start container -->
+  <div class="container">
+
+    <!-- Start the buttons and dice -->
+    <div class="center v-flex">
+      <button class="top">New Game ?</button>
+      <!-- <div class="rounds">
+        <h1>Round: </h1>
+        <h2>1</h2>
+      </div> -->
+      <div>
+        <h1 class="dice">
+          <i class="fa-solid fa-dice-one"></i>
+        </h1>
+      </div>
+      <div class="bottom">
+        <button class="roll-btn">Roll Dice</button>
+        <button class="giveTurn-btn">YourTurn</button>
+      </div>
+    </div>
+    <!-- End the buttons and dice -->
+
+    <!-- Start first Player -->
+    <div class="player1 player v-flex active">
+      <h1>Player 1</h1>
+      <h1 class="score-sum">0</h1>
+      <div class="score">
+        <h2>Current Score</h2>
+        <h2 class="current-score active-score">0</h2>
+      </div>
+    </div>
+    <!-- End first Player -->
+
+    <!-- Start second Player -->
+    <div class="player2 player v-flex">
+      <h1>Player 2</h1>
+      <h1 class="score-sum">0</h1>
+      <div class="score">
+        <h2>Current Score</h2>
+        <h2 class="current-score">0</h2>
+      </div>
+    </div>
+    <!-- End second Player -->
+
+  </div>
+  <!-- End container -->
+
+  <script src="javascript/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 100px;
+  background: linear-gradient(135deg, #2B2E34, #3BAF4A);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  height: 70vh;
+  width: 80vw;
+  overflow: hidden;
+  position: relative;
+}
+
+.container .player {
+  padding: 20px 120px 40px;
+  background: rgba(43, 46, 52, 80%);
+  color: #f6f6f6;
+}
+
+.container .active {
+  background: rgba(43, 46, 52, 95%);
+}
+.container .player h1 {
+  font-size: 2.5rem;
+}
+.container .player h1.score-sum {
+  font-size: 5.5rem;
+  font-weight: 400;
+  color: #3BAF4A;
+}
+.container .player .score {
+  padding: 0 30px 10px;
+  background-color: #3BAF4A;
+  color: #f6f6f6;
+}
+.container .player .score h2 {
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin: 10px;
+}
+
+.container .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 70vh;
+  padding: 20px 0 40px;
+}
+.container .center button {
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  padding: 10px 20px;
+  box-shadow: 0 0 15px #2B2E34;
+  background-color: #32943f;
+  color: #2B2E34;
+  transition: background-color 0.3s;
+}
+.container .center button:hover {
+  background-color: #191a1e;
+  color: #3BAF4A;
+}
+.container .center .bottom {
+  display: flex;
+  flex-direction: column;
+}
+.container .dice i {
+  font-size: 8rem;
+  color: #fff;
+}
+
+.v-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
